@@ -39,8 +39,7 @@ class Library:
         for index, book in enumerate(self.books):
             if id_ == book.id_:
                 return index
-        print("Книги с запрашиваемым id не существует")
-        return None
+        raise ValueError("Книги с запрашиваемым id не существует")
 
 
 
