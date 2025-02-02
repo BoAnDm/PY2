@@ -31,7 +31,6 @@ class AudioBook(Book):
         self.duration = duration
 
 
-
 if __name__ == '__main__':
     book = Book('book_name', 'book_author1')
     paper_book = PaperBook('paper_book_name', 'paper_book_author', 3)
@@ -39,3 +38,12 @@ if __name__ == '__main__':
     print(book.__str__(), book.__repr__(), '', sep = '\n')
     print(paper_book.__str__(), paper_book.__repr__(), '', sep = '\n')
     print(audio_book.__str__(), audio_book.__repr__(), '', sep = '\n')
+    '''Получаем:
+    Книга book_name. Автор book_author1
+    Book(name='book_name', author='book_author1')
+
+    Книга paper_book_name. Автор paper_book_author 
+    PaperBook(name='paper_book_name', author='paper_book_author')
+
+    Книга audio_book_name. Автор audio_book_author
+    AudioBook(name='audio_book_name', author='audio_book_author')'''
